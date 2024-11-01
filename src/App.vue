@@ -220,10 +220,16 @@
           vertical
           class="vertical-test"
         >
-          <span class="badge badge-success">START</span>
+          <span
+            class="badge badge-success"
+            :style="`height: ${width}px;`"
+          >
+            START
+          </span>
           Short text =(
           <span class="badge badge-danger">END</span>
         </MarqueeText>
+        <a @click="width += 10">222</a>
       </section>
     </main>
   </div>
@@ -241,6 +247,11 @@ export default defineComponent({
   setup() {
     return {
       isPaused: ref(false)
+    }
+  },
+  data() {
+    return {
+      width: 20
     }
   }
 })

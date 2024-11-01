@@ -1,7 +1,7 @@
 <script>
-import { h } from 'vue'
+import { h, defineComponent } from 'vue'
 
-export default {
+export default defineComponent({
   name: 'MarqueeText',
   props: {
     duration: {
@@ -28,33 +28,34 @@ export default {
       default: false
     }
   },
-  render({
-    $slots, $style, $props: {
+  render() {
+    const {
       duration, repeat, paused, reverse, vertical
-    }
-  }) {
-    return h('div', { class: [$style.wrap] }, [
+    } = this
+
+    return h('div', { class: this.$style.wrap }, [
       h('div', {
         class: [
           paused
-            ? $style.paused
-            : undefined,
-          $style.content
+            ? this.$style.paused
+            : '',
+          this.$style.content
         ]
-      }, Array(repeat).fill(
-        h('div', {
-          class: vertical ? $style.textVertical : $style.text,
+      }, Array.from(
+        { length: repeat },
+        (_, i) => h('div', {
+          key: i, // 确保每个子元素有唯一的 key
+          class: vertical ? this.$style.textVertical : this.$style.text,
           style: {
             animationDuration: `${duration}s`,
-            animationDirection: reverse
-              ? 'reverse'
-              : undefined
+            animationDirection: reverse ? 'reverse' : undefined
           }
-        }, $slots.default())
+        },
+        this.$slots.default())
       ))
     ])
   }
-}
+})
 </script>
 
 <style module>
@@ -84,12 +85,20 @@ export default {
 }
 
 @keyframes animation {
-  0% { transform:translateX(0); }
-  100% { transform:translateX(-100%); }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes animation-vertical {
-  0% { transform:translateY(0); }
-  100% { transform:translateY(-100%); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
 }
 </style>
