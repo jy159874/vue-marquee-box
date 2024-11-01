@@ -1,5 +1,5 @@
 {
-  "name": "vue-marquee-text-component",
+  "name": "vue-marquee-box",
   "version": "2.0.1",
   "description": "[CSS GPU Animation] Marquee Text for vuejs",
   "author": "EvodiaAut <evodia.aut@gmail.com>",
@@ -108,12 +108,12 @@
     "not ie <= 8"
   ],
   "bugs": {
-    "url": "https://github.com/EvodiaAut/vue-marquee-text-component/issues"
+    "url": "https://github.com/jy159874/vue-marquee-text-component/issues"
   },
   "directories": {
     "doc": "docs"
   },
-  "homepage": "https://github.com/EvodiaAut/vue-marquee-text-component",
+  "homepage": "https://github.com/jy159874/vue-marquee-text-component",
   "keywords": [
     "vue",
     "vuejs",
@@ -127,6 +127,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvodiaAut/vue-marquee-text-component.git"
+    "url": "git+https://github.com/jy159874/vue-marquee-box.git"
   }
 }

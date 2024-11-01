@@ -11,7 +11,7 @@ The most common use case is to register the component globally.
 ```js
 // in your main.js or similar file
 import Vue from 'vue'
-import MarqueeText from 'vue-marquee-text-component'
+import MarqueeText from 'vue-marquee-box'
 
 Vue.component('marquee-text', MarqueeText)
 ```
@@ -20,7 +20,7 @@ Alternatively you can do this to register the components:
 
 ```js
 // HelloWorld.vue
-import MarqueeText from 'vue-marquee-text-component'
+import MarqueeText from 'vue-marquee-box'
 
 export default {
   name: 'HelloWorld',

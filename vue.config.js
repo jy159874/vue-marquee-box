@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/vue-marquee-text-component/'
+    ? '/vue-marquee-box/'
     : '/',
   css: {
     extract: false,
