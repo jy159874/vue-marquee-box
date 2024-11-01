@@ -1,8 +1,8 @@
-# vue-marquee-text-component
+# vue-marquee-box
 
 
 
-`npm install vue-marquee-text-component` or `yarn add vue-marquee-text-component`
+`npm install vue-marquee-box` or `yarn add vue-marquee-box`
 
 ## Usage
 
