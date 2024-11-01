@@ -1,17 +1,6 @@
 # vue-marquee-text-component
 
-> [[CSS GPU Animation](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)] Marquee Text for vuejs
 
-[![npm](https://img.shields.io/npm/v/vue-marquee-text-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-text-component)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=for-the-badge)](https://github.com/EvodiaAut/vue-marquee-text-component/blob/master/LICENSE.md)
-[![npm](https://img.shields.io/npm/dt/vue-marquee-text-component.svg?style=for-the-badge)](https://www.npmjs.com/package/vue-marquee-text-component)
-
-## Demo
-
-[Demo here](https://evodiaaut.github.io/vue-marquee-text-component/)
-
-## Install
-[Vue 3 (master)](https://github.com/EvodiaAut/vue-marquee-text-component) | [Vue 2 (v1)](https://github.com/EvodiaAut/vue-marquee-text-component/tree/v1)
 
 `npm install vue-marquee-text-component` or `yarn add vue-marquee-text-component`
 
@@ -68,6 +57,7 @@ On your page you can now use html like this:
 |repeat|Number|2|Number of repeat the Slot (It's important for to short content)
 |paused|Boolean|false|The property specifies whether the animation is running or paused
 |reverse|Boolean|false|Set animation-direction to reverse
+|vertical|Booolean|false| set animation vertical
 
 ## Important information for dynamic content
 If you change the content you need reload the component. For this use property `:key` [see more](https://vuejs.org/v2/api/#key)
